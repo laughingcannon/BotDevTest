@@ -82,16 +82,16 @@ fetch('big.txt') // Currently fetching directly from txt, and saving the stream 
   }
 
 
-  let promises = [];
+  let promises = []; // Create array to execute all API calls through promises.
   for (i = 0; i < 10; ++i)
   {
-	promises.push(getSynonymsPOS(finalWordsArray[i].name, i));
+	promises.push(getSynonymsPOS(finalWordsArray[i].name, i)); 
   }
 
   Promise.all(promises); //Execute all as promises.
 	
   for (var j = 0; j < 10; ++j)
   {
-	console.log(finalWordsArray[j]);
+	console.log(finalWordsArray[j]); // Output as JSON objects.
   }
 });

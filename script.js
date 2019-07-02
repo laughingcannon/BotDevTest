@@ -1,4 +1,4 @@
-// Execute p1.html through browser.
+// Execute p1.html through browser, and open developer console (Ctrl+Shift+I).
 
 var words = []; // Array of words from txt file.
 var wordsMap = {}; // To create map of words and their frequency.

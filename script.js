@@ -19,7 +19,9 @@ var words = []; // Array of words from txt file.
 var wordsMap = {}; // To create map of words and their frequency.
 var api_key = 'dict.1.1.20170610T055246Z.0f11bdc42e7b693a.eefbde961e10106a4efa7d852287caa49ecc68cf'; // API key to call Yandex.
 
-fetch('big.txt') // Currently fetching directly from txt, and saving the stream in a variable "text". 
+// Currently fetching directly from txt, and saving the stream in a variable "text".
+//Error faced while using URL: Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at http://norvig.com/big.txt. (Reason: CORS header ‘Access-Control-Allow-Origin’ missing).
+fetch('big.txt')
   .then(response => response.text())
   .then((text) => {
   

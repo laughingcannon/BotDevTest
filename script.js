@@ -10,7 +10,6 @@ fetch('big.txt')
   .then(response => response.text())
   .then((text) => {
   
-  // words = text.split(" ");
   words = text.split(/\s+/); // Removing spaces and gathering words in array.
   // console.log(words);
 

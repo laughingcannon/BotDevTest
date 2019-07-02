@@ -1,3 +1,5 @@
+// Execute p1.html through browser.
+
 var words = []; // Array of words from txt file.
 var wordsMap = {}; // To create map of words and their frequency.
 var api_key = 'dict.1.1.20170610T055246Z.0f11bdc42e7b693a.eefbde961e10106a4efa7d852287caa49ecc68cf'; // API key to call Yandex.
